@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
 function App() {
   return (
     <>
@@ -22,8 +23,10 @@ function App() {
 
 
       <Navbar title="TextUtils"aboutText = "About TextUtils" />
-
-
+      <div className='container my-3'> 
+      <TextForm heading="Entering the text to analyze below" />
+      <button className='btn btn-primary' ></button>
+</div>
     </>
 
   );
