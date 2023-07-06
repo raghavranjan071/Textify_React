@@ -15,7 +15,7 @@ export default function TextForm(props) {
     <label for="myBox" className='form-label'>Example textarea</label>
     <textarea class="form-control" id="my-box" rows="3">Convert to uppercase</textarea>
     </div>
-</form>
+</form> 
 
     </div>
 
