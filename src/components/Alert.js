@@ -9,10 +9,13 @@ function Alert(props) {
 
         // if props.alert null hai to alert startement ye wala print hoga  
         //Nahi to props wala
-        props.alert && <div className={`alert alert-${capitalize(props.alert.type)} alert-dismissible fade show" role="aler`}>
-            <strong> {props.alert.type}</strong>: {props.alert.msg}
-        </div>
+        <div style={{height: '50px'}}>
+       { props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
 
+            <strong> {capitalize(props.alert.type)}</strong>: {props.alert.msg}
+            
+        </div>}
+        </div>
     )
 }
 
